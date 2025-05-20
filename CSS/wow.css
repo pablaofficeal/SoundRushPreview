@@ -1,0 +1,103 @@
+        @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+          margin: 0;
+          font-family: "Saira", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          font-variation-settings: "wdth" 100, "wght" 400;
+          background: linear-gradient(90deg, rgba(2,0,36,0.73) 0%, rgba(9,9,121,0.71) 35%, rgba(247,0,255,0.37) 100%);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+    
+        .glass {
+          background: linear-gradient(135deg, #1e1e2f, #2a2a4a);      
+          border-radius: 20px;
+          padding: 40px;
+          backdrop-filter: blur(15px);
+          box-shadow: 0 8px 32px rgb(255, 0, 0);
+          text-align: center;
+          max-width: 600px;
+          width: 90%;
+        }
+    
+        h1 {
+            font-family: "Saira", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100, "wght" 400;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+          font-size: 1.2rem;
+          margin-bottom: 30px;
+          color: #ccc;
+        }
+    
+        #timer {
+          font-size: 2rem;
+          margin: 20px 0;
+          color: #ff00f2;
+          animation: pulse 1.5s infinite ease-in-out;
+        }
+    
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.6; }
+        }
+    
+        .socials {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+        }
+    
+        .socials a {
+          color: white;
+          background-color: #333;
+          padding: 10px 20px;
+          border-radius: 10px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.3s ease;
+        }
+    
+        .socials a:hover {
+          background-color: #00ffe1;
+          color: #000;
+          transform: scale(1.05);
+        }
+        
+        @media (max-width: 600px) {
+          .glass {
+            padding: 20px;
+          }
+    
+          h1 {
+            font-size: 2rem;
+          }
+    
+          #timer {
+            font-size: 1.5rem;
+          }
+    
+          .socials a {
+            padding: 8px 16px;
+          }
+          .socials {
+            gap: 10px;
+            display: inline;
+          }
+          .subtitle {
+            font-size: 1rem;  
+          }
+        }

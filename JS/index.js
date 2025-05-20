@@ -1,4 +1,4 @@
-        const targetDate = new Date('2025-07-11T00:00:00');
+        const targetDate = new Date('2025-08-10T00:00:00');
         const timer = document.getElementById('timer');
     
         function updateTimer() {

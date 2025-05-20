@@ -77,3 +77,28 @@
           color: #000;
           transform: scale(1.05);
         }
+        
+        @media (max-width: 600px) {
+          .glass {
+            padding: 20px;
+          }
+    
+          h1 {
+            font-size: 2rem;
+          }
+    
+          #timer {
+            font-size: 1.5rem;
+          }
+    
+          .socials a {
+            padding: 8px 16px;
+          }
+          .socials {
+            gap: 10px;
+            display: inline;
+          }
+          .subtitle {
+            font-size: 1rem;  
+          }
+        }
